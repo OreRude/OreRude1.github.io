@@ -35,7 +35,7 @@ function setPosition(position) {
 //show error
 function showError(error) {
     notificationElement.style.display = "block";
-    notificationElement.innerHTML = `<p> ${error.message}</p>`;
+    //notificationElement.innerHTML = `<p> ${error.message}</p>`;
 }
 function getWeather(latitude, longitude) {
     let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
